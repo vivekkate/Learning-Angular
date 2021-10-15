@@ -9,6 +9,8 @@ export class ServersComponent implements OnInit {
 
 
   btnStatus=true;
+  val="Hello ";
+  v="";
 
   content='server is not added yet ...!'
 
@@ -21,6 +23,11 @@ export class ServersComponent implements OnInit {
 
   addServer(){
     this.content="server is added";
+  }
+
+  inputStatus(event:any){
+    this.v=this.v+this.val;  
+    // console.log(event.target.value);
   }
 
 
