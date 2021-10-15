@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
+
+  btnStatus=true;
+
+  content='server is not added yet ...!'
+
+
+  constructor() { 
+    setTimeout(()=>{
+      this.btnStatus=false;
+    },3000);
+  }
+
+  addServer(){
+    this.content="server is added";
+  }
+
+
+
 
   ngOnInit(): void {
   }

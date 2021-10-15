@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'David';
+  btnProperty=true;
+
+constructor(){
+
+  setTimeout(() => {
+    this.btnProperty=false;
+  }, 3000);
+
+}
+
 }
